@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DA72EBC3-DF4C-4919-8A53-0BECDF7AD015}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMUD.Core", "src\SharpMUD.Core\SharpMUD.Core.csproj", "{93448FB7-97AD-4256-A973-535DC42986CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMUD.Game", "src\SharpMUD.Game\SharpMUD.Game.csproj", "{C9AC38CA-9DF1-45D5-8AA3-7A5809326DB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMUD.Network", "src\SharpMUD.Network\SharpMUD.Network.csproj", "{41EEE79B-8AA3-4A18-A844-426080AFFA21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMUD.Data", "src\SharpMUD.Data\SharpMUD.Data.csproj", "{785C8217-0674-47CA-8EE4-70056E78733D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMUD.Server", "src\SharpMUD.Server\SharpMUD.Server.csproj", "{CBC50799-67A3-4A26-8236-94C8EAE16A61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93448FB7-97AD-4256-A973-535DC42986CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93448FB7-97AD-4256-A973-535DC42986CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93448FB7-97AD-4256-A973-535DC42986CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93448FB7-97AD-4256-A973-535DC42986CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9AC38CA-9DF1-45D5-8AA3-7A5809326DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9AC38CA-9DF1-45D5-8AA3-7A5809326DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9AC38CA-9DF1-45D5-8AA3-7A5809326DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9AC38CA-9DF1-45D5-8AA3-7A5809326DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41EEE79B-8AA3-4A18-A844-426080AFFA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41EEE79B-8AA3-4A18-A844-426080AFFA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41EEE79B-8AA3-4A18-A844-426080AFFA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41EEE79B-8AA3-4A18-A844-426080AFFA21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785C8217-0674-47CA-8EE4-70056E78733D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785C8217-0674-47CA-8EE4-70056E78733D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785C8217-0674-47CA-8EE4-70056E78733D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785C8217-0674-47CA-8EE4-70056E78733D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC50799-67A3-4A26-8236-94C8EAE16A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC50799-67A3-4A26-8236-94C8EAE16A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC50799-67A3-4A26-8236-94C8EAE16A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC50799-67A3-4A26-8236-94C8EAE16A61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93448FB7-97AD-4256-A973-535DC42986CC} = {DA72EBC3-DF4C-4919-8A53-0BECDF7AD015}
+		{C9AC38CA-9DF1-45D5-8AA3-7A5809326DB3} = {DA72EBC3-DF4C-4919-8A53-0BECDF7AD015}
+		{41EEE79B-8AA3-4A18-A844-426080AFFA21} = {DA72EBC3-DF4C-4919-8A53-0BECDF7AD015}
+		{785C8217-0674-47CA-8EE4-70056E78733D} = {DA72EBC3-DF4C-4919-8A53-0BECDF7AD015}
+		{CBC50799-67A3-4A26-8236-94C8EAE16A61} = {DA72EBC3-DF4C-4919-8A53-0BECDF7AD015}
+	EndGlobalSection
+EndGlobal

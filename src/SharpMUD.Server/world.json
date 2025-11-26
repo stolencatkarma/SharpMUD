@@ -1,0 +1,155 @@
+{
+  "skills": [
+    {
+      "id": "skill_fireball",
+      "name": "Fireball",
+      "description": "A ball of fire.",
+      "type": "Damage",
+      "manaCost": 10,
+      "cooldown": 2000,
+      "value": 20,
+      "range": 10
+    },
+    {
+      "id": "skill_heal",
+      "name": "Heal",
+      "description": "Restores health.",
+      "type": "Heal",
+      "manaCost": 15,
+      "cooldown": 5000,
+      "value": 30,
+      "range": 0
+    }
+  ],
+  "quests": [
+    {
+      "id": "quest_kill_rats",
+      "title": "Rat Exterminator",
+      "description": "The sewers are overrun with rats. Kill 5 of them for me.",
+      "type": "Kill",
+      "targetName": "Rat",
+      "targetCount": 5,
+      "rewardXp": 100,
+      "rewardGold": 50
+    }
+  ],
+  "sectors": [
+    {
+      "id": "Alpha",
+      "planets": [
+        {
+          "name": "Earth",
+          "zoneId": "Earth",
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "description": "The blue marble. Home of humanity."
+        },
+        {
+          "name": "Mars",
+          "zoneId": "Mars",
+          "x": 50,
+          "y": 0,
+          "z": 0,
+          "description": "The red planet. Dusty and cold."
+        }
+      ],
+      "mobs": [
+        {
+          "name": "Pirate Raider",
+          "x": 20,
+          "y": 20,
+          "z": 0,
+          "hull": 50,
+          "shields": 20,
+          "weapon": { "name": "Laser Cannon", "damage": 5, "range": 50, "cooldown": 2000 },
+          "aggressive": true,
+          "description": "A rusty pirate ship looking for trouble."
+        }
+      ]
+    }
+  ],
+  "zones": [
+    {
+      "id": "Earth",
+      "rooms": [
+        {
+          "x": 0,
+          "y": 0,
+          "description": "Town Square",
+          "longDescription": "You are in the town square. A shop is to the north.",
+          "shopkeeper": true,
+          "mobs": [
+            {
+              "name": "Mayor",
+              "health": 100,
+              "aggressive": false,
+              "description": "The Mayor of the town.",
+              "quests": ["quest_kill_rats"]
+            }
+          ],
+          "items": [
+            {
+              "name": "Rusty Sword",
+              "value": 10,
+              "weight": 5,
+              "weapon": { "name": "Rusty Sword", "damage": 5, "range": 1, "cooldown": 1500 },
+              "equippable": { "slot": "MainHand", "armorBonus": 0 },
+              "description": "A rusty old sword."
+            },
+            {
+              "name": "Leather Helmet",
+              "value": 15,
+              "weight": 2,
+              "equippable": { "slot": "Head", "armorBonus": 2 },
+              "description": "A simple leather helmet."
+            }
+          ]
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "description": "Sewer Entrance",
+          "longDescription": "A dark sewer entrance.",
+          "mobs": [
+            {
+              "name": "Rat",
+              "health": 20,
+              "weapon": { "name": "Teeth", "damage": 2, "range": 1, "cooldown": 1000 },
+              "aggressive": true,
+              "description": "A large sewer rat.",
+              "drops": [
+                {
+                  "name": "Rat Tail",
+                  "value": 5,
+                  "weight": 1,
+                  "description": "A gross rat tail."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Mars",
+      "rooms": [
+        {
+          "x": 5,
+          "y": 5,
+          "description": "Mars Surface",
+          "longDescription": "Red dust covers everything.",
+          "mobs": [
+            {
+              "name": "Martian Rover",
+              "health": 50,
+              "weapon": { "name": "Drill", "damage": 8, "range": 2, "cooldown": 1500 },
+              "aggressive": true,
+              "description": "An old rover, malfunctioning and hostile."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
